@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write \"**/*.+(js|jsx|ts|ts|tsx)\"",
-    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\""
+    "lint:js": "eslint \"**/*.{js,jsx,ts,tsx}\"",
+    "lint:css": "stylelint \"**/*.{css,scss}\""
   },
   "husky": {
     "hooks": {
@@ -20,7 +21,8 @@
     ],
     "**/*.{ts,tsx,js,jsx}": [
       "npm run format",
-      "npm run lint",
+      "npm run lint:js",
+      "npm run lint:css",
       "bash -c tsc"
     ]
   },
@@ -55,6 +57,10 @@
     "lint-staged": "^10.4.1",
     "prettier": "^2.1.2",
     "react-test-renderer": "^16.14.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-twbs-bootstrap": "^2.1.0",
+    "stylelint-prettier": "^1.1.2",
     "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
   }

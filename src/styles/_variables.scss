@@ -1,0 +1,15 @@
+$text-color-base: '#000' !default;
+
+$font-family-base: system-ui, -apple-system, 'Arial' !default;
+$font-size-base: 1em !default;
+$line-height-base: 1.5 !default;
+$font-size-root: 16px !default;
+
+$breakpoints: (
+  xs: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
